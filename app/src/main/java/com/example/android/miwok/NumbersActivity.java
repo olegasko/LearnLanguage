@@ -28,17 +28,8 @@ public class NumbersActivity extends AppCompatActivity {
         ));
 
         WordAdapter itemsAdapter =
-                new WordAdapter(this, R.layout.list_item, words);
+                new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
-
-
-//        LinearLayout rootView = (LinearLayout) findViewById(R.id.root_view);
-//
-//        for(String element : words) {
-//            TextView wordView = new TextView(this);
-//            wordView.setText(element);
-//            rootView.addView(wordView);
-//        }
     }
 }
