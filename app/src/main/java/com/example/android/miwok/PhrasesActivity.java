@@ -12,7 +12,7 @@ public class PhrasesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phrases);
+        setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<>(Arrays.asList(
                 new Word("Where are you going?", "Куда ты идешь?"),
