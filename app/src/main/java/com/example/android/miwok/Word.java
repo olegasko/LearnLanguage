@@ -7,6 +7,7 @@ public class Word {
     private String mEnglishWord;
     private String mTranslatedWord;
     private int mImageResourceId;
+    private int mAudioResourceId;
     private boolean mImageVisibility;
 
     public Word(String englishWord, String translatedWord) {
@@ -19,6 +20,14 @@ public class Word {
         this.mEnglishWord = englishWord;
         this.mTranslatedWord = translatedWord;
         this.mImageResourceId = imageResourceId;
+        this.mImageVisibility = true;
+    }
+
+    public Word(String englishWord, String translatedWord, int imageResourceId, int audioResourceId) {
+        this.mEnglishWord = englishWord;
+        this.mTranslatedWord = translatedWord;
+        this.mImageResourceId = imageResourceId;
+        this.mAudioResourceId = audioResourceId;
         this.mImageVisibility = true;
     }
 
@@ -36,5 +45,9 @@ public class Word {
 
     public boolean getImageVisibility() {
         return  mImageVisibility;
+    }
+
+    public int getAudioResourceId() {
+        return mAudioResourceId;
     }
 }
