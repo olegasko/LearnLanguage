@@ -10,17 +10,11 @@ public class Word {
     private int mAudioResourceId;
     private boolean mImageVisibility;
 
-    public Word(String englishWord, String translatedWord) {
+    public Word(String englishWord, String translatedWord, int audioResourceId) {
         this.mEnglishWord = englishWord;
         this.mTranslatedWord = translatedWord;
+        this.mAudioResourceId = audioResourceId;
         this.mImageVisibility = false;
-    }
-
-    public Word(String englishWord, String translatedWord, int imageResourceId) {
-        this.mEnglishWord = englishWord;
-        this.mTranslatedWord = translatedWord;
-        this.mImageResourceId = imageResourceId;
-        this.mImageVisibility = true;
     }
 
     public Word(String englishWord, String translatedWord, int imageResourceId, int audioResourceId) {
