@@ -6,11 +6,14 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 
 
-public class CustomFragmentPagerAdapter extends FragmentPagerAdapter {
+public class CategoryAdapter extends FragmentPagerAdapter {
 
-    public CustomFragmentPagerAdapter(FragmentManager fm) {
+    public CategoryAdapter(FragmentManager fm) {
         super(fm);
     }
+
+    private String tabTitles[] = new String[] {"Numbers", "Family", "Colors", "Phrases"};
+
 
     @Override
     public Fragment getItem(int position) {
@@ -31,5 +34,10 @@ public class CustomFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return 4;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return tabTitles[position];
     }
 }

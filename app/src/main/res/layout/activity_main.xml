@@ -2,12 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabTextColor="#A8A19E"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabBackground="@color/primary_color"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white"/>
 
 </LinearLayout>
